@@ -70,7 +70,7 @@ Các quy tắc chi tiết:
 
 *   **`blocklists.txt`** / **`allowlists.txt`**: Được cập nhật tự động mỗi giờ.
     *   **Cơ chế**: Nếu một domain nằm trong `allowlists.txt`, nó sẽ luôn được cho phép kể cả khi có tên trong `blocklists.txt` (giúp tránh việc chặn nhầm).
-    *   **Cách cấu hình**: Thay đổi các URL trong lệnh `curl` bên trong file [update_lists.sh#L34-L43](update_lists.sh) để thêm hoặc bớt các nguồn chặn/mở chặn.
+    *   **Cách cấu hình**: Thay đổi các URL trong lệnh `curl` bên trong file [update_lists.sh](update_lists.sh#L34-L43) để thêm hoặc bớt các nguồn chặn/mở chặn.
 *   **`private_tlds.txt`**: Thêm các domain nội bộ hoặc URL router của riêng bạn vào đây.
 *   **`redirect_rules.txt`**: Điều hướng domain bằng cơ chế CNAME Injection (Domain A -> CNAME -> Domain B). Giúp tùy chỉnh CDN chính xác theo ý muốn.
     *   **Định dạng**: `domain-nguon domain-dich`
